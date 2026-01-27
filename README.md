@@ -24,6 +24,11 @@ This repository contains my Linux and DevOps practice work.
 - Added a remote GitHub repository and pushed all branches using git remote add and git push
 - Documented all Git commands used in a GIT_COMMANDS.md file
 
+### Assignment2
+- Created a new branch (aws) and managed branch-specific changes
+- Added an aws-services.md file documenting 5 commonly used AWS services
+
+
 ## Tools Used
 - Linux (Ubuntu)
 - Bash scripting
