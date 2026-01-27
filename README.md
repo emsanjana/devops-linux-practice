@@ -12,6 +12,18 @@ This repository contains my Linux and DevOps practice work.
 - Wrote basic Bash scripts
 - Set up Git, GitHub, and SSH authentication
 
+## Week 2
+
+### Assignment1
+- Created and worked with branches:
+	feature/login-page
+	feature/signup-page
+	bugfix/css-align
+- Performed basic commits on each branch using git add and git commit
+- Merged feature and bugfix branches into main using git merge
+- Added a remote GitHub repository and pushed all branches using git remote add and git push
+- Documented all Git commands used in a GIT_COMMANDS.md file
+
 ## Tools Used
 - Linux (Ubuntu)
 - Bash scripting
