@@ -27,6 +27,9 @@ This repository contains my Linux and DevOps practice work.
 ### Assignment2
 - Created a new branch (aws) and managed branch-specific changes
 - Added an aws-services.md file documenting 5 commonly used AWS services
+- Added an aws-usecase.md file describing a basic app deployment workflow.
+- Installed Ansible and wrote a playbook to create a user, install nginx, and start the service.
+- Installed Terraform and created a basic configuration defining a provider and a sample resource.
 
 
 ## Tools Used
