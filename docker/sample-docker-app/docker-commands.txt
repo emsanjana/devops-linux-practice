@@ -1,0 +1,48 @@
+Docker Commands Used 
+
+sudo apt update : Updates the package list so Ubuntu knows about the latest available software versions.
+
+sudo apt upgrade -y : Upgrades already installed packages to avoid dependency and compatibility issues.
+
+sudo apt install -y ca-certificates curl gnupg lsb-release : Installs required tools to securely download and verify Docker packages.
+
+sudo mkdir -p /etc/apt/keyrings : Creates a secure directory to store Docker’s trusted GPG key.
+
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg : Downloads and installs Docker’s official GPG key to verify package authenticity.
+
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+: Adds Docker’s official repository to Ubuntu so Docker can be installed via apt.
+
+sudo apt update :  Refreshes the package list again to include Docker’s repository.
+
+sudo apt install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin :  Installs Docker Engine, CLI, container runtime, and build/compose tools.
+
+docker --version :  Verifies that Docker is installed correctly.
+
+sudo usermod -aG docker $USER :  Adds the current user to the Docker group so Docker can be run without sudo.
+
+docker run hello-world :  Tests Docker installation by running a sample container.
+
+mkdir sample-docker-app :  Creates a directory for the Docker project.
+
+cd sample-docker-app :  Moves into the project directory.
+
+nano app.py : Creates and edits the Python Flask application file.
+
+nano requirements.txt : Creates a file listing Python dependencies for the application.
+
+nano Dockerfile : Creates the Dockerfile that defines how the Docker image is built.
+
+pwd : Confirms the current working directory before building the image.
+
+docker build -t sample-python-app .  :  Builds a Docker image from the Dockerfile and names it.
+
+docker run -p 5000:5000 sample-python-app : Runs the container and maps container port 5000 to host port 5000.
+
+docker login :  Logs in to Docker Hub to allow pushing images.
+
+docker tag sample-python-app username/sample-python-app:latest :  Renames the image according to Docker Hub naming conventions.
+
+docker push username/sample-python-app:latest :  Uploads the Docker image to Docker Hub.
+
+docker build -t sample-python-app . :  Rebuilds the image using a multi-stage Dockerfile for optimization.
