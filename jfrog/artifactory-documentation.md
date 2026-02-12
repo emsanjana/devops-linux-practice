@@ -1,7 +1,6 @@
 # JFrog Artifactory Installation and Setup on Ubuntu
 
 ## Step 1: Update the System
-```bash
 sudo apt update
 
 ## Step 2: Install Java
