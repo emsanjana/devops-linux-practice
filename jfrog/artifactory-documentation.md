@@ -18,66 +18,66 @@ sudo apt install unzip -y
 ## Step 5: Unzip Artifactory Package
 unzip -o jfrog-artifactory-oss-6.9.6.zip -d /opt/
 
-##Step 6: Navigate to Artifactory Directory
+## Step 6: Navigate to Artifactory Directory
 cd /opt/artifactory-oss-6.9.6
 
-##Step 7: Start JFrog Artifactory
+## Step 7: Start JFrog Artifactory
 ./bin/artifactory.sh start
 
-##Step 8: Access Artifactory UI
+## Step 8: Access Artifactory UI
 Open your browser and go to: https://<your-server-ip>:8081
 
-##Step 9: Set Admin Password
+## Step 9: Set Admin Password
 Follow the UI prompt to set the administrator password.
 
-##Step 10: Select Package Types
+## Step 10: Select Package Types
 Maven
 Generic
 
-##Step 11: Finish Setup
+## Step 11: Finish Setup
 Click Finish to navigate to the home dashboard.
 
-##Step 12: Create a Generic Local Repository
+## Step 12: Create a Generic Local Repository
 
-###12.1 Open Repository Configuration
+### 12.1 Open Repository Configuration
 Navigate: Admin → Repositories → Local → New Local Repository
 
-###12.2 Configure Repository
+### 12.2 Configure Repository
 Package Type: Generic
 Repository Key: generic-local
 
-###12.3 Save & Finish
+### 12.3 Save & Finish
 
-###12.4 Verify Repository
+### 12.4 Verify Repository
 Go to Artifacts → You should see generic-local
 
-##Step 13: Create a Maven Local Repository
+## Step 13: Create a Maven Local Repository
 
-###13.1 Open Repository Configuration
+### 13.1 Open Repository Configuration
 Navigate: Admin → Repositories → Local → New
 
-###13.2 Select Package Type
+### 13.2 Select Package Type
 Maven
 
-###13.3 Configure Maven Repository
+### 13.3 Configure Maven Repository
 Repository Key: maven-local
 Maven Snapshot Version Behavior: Unique
 Handle Releases: Tick
 Handle Snapshots: Tick
 
-###13.4 Save & Finish
-###13.5 Verify Repository
+### 13.4 Save & Finish
+### 13.5 Verify Repository
 Go to Artifacts → You should see maven-local
 
-##Step 14: Prepare Test Files for Generic Repository
+## Step 14: Prepare Test Files for Generic Repository
 mkdir artifactory-test
 cd artifactory-test
 echo "Hello Artifactory" > test1.txt
 echo "Generic Repo Upload" > test2.txt
 
-##Step 15: Upload Test Files via Web UI
+## Step 15: Upload Test Files via Web UI
 
-###15.1 Navigate to Artifacts
+### 15.1 Navigate to Artifacts
 Click generic-local
 Click Deploy
 Select test1.txt and test2.txt
