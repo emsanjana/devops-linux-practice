@@ -8,12 +8,19 @@ It consists of a Flask web application and a PostgreSQL database running in sepa
 
 ## Project Structure
 devops-linux-practice/docker-compose-flask-postgres/
+
 						├── app/
+						
 						│ ├── app.py
+						
 						│ ├── requirements.txt
+						
 						├── Dockerfile
+						
 						├── docker-compose.yml
+						
 						├── .env
+						
 						└── README.md
 ---
 
