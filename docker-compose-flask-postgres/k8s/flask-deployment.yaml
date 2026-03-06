@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: flask-app
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
       app: flask
@@ -14,16 +14,38 @@ spec:
     spec:
       containers:
         - name: flask
-          image: flask-k8s-app
+          image: flask-k8s-app:latest
           imagePullPolicy: IfNotPresent
+
           ports:
             - containerPort: 5000
+
           env:
             - name: DB_HOST
               value: postgres
-            - name: DB_NAME
-              value: flaskdb
+
             - name: DB_USER
-              value: flaskuser
+              valueFrom:
+                secretKeyRef:
+                  name: postgres-secret
+                  key: POSTGRES_USER
+
             - name: DB_PASSWORD
-              value: flaskpassword
+              valueFrom:
+                secretKeyRef:
+                  name: postgres-secret
+                  key: POSTGRES_PASSWORD
+
+          readinessProbe:
+            httpGet:
+              path: /
+              port: 5000
+            initialDelaySeconds: 5
+            periodSeconds: 5
+
+          livenessProbe:
+            httpGet:
+              path: /
+              port: 5000
+            initialDelaySeconds: 10
+            periodSeconds: 10
