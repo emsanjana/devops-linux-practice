@@ -102,3 +102,5 @@ This repository contains DevOps practice work.
 - Minikube
 - Flask
 - PostgreSQL
+- Jenkins
+- GitHub Actions
