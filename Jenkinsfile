@@ -5,7 +5,7 @@ pipeline {
 
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/emsanjana/devops-linux-practice.git'
+                git branch: 'main', url: 'https://github.com/emsanjana/devops-linux-practice.git'
             }
         }
 
