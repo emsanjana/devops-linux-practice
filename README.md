@@ -84,7 +84,14 @@ This repository contains DevOps practice work.
 	Network communication between pods
 - Documented it.
 
-
+## Week 5
+### Assignment 1
+- Installed and configured Jenkins locally/VM
+- Created a Pipeline to automate GitHub code pull, Docker build, and validation
+- Converted the pipeline into a Jenkinsfile and stored it in GitHub
+- Configured automatic triggers for code changes
+- Documented Jenkins usage, job types, and Jenkinsfile benefits
+- Updated and pushed the repository with the Jenkinsfile and documentation
 
 ## Tools Used
 
@@ -104,3 +111,4 @@ This repository contains DevOps practice work.
 - PostgreSQL
 - Jenkins
 - GitHub Actions
+- Jenkins
