@@ -1,0 +1,29 @@
+What Jenkins is used for in CI/CD? 
+Jenkins is an open-source automation tool used to implement Continuous Integration and Continuous Deployment.
+Jenkins is used to Automatically pull code from Github, Build the docker image for the flask application, Verify the build to ensure the application runs correctly, Enable automation in the software delivery process.
+
+
+Difference between Freestyle Jobs and Pipeline Jobs
+Freestyle Job:
+1. GUI based configuration
+2. Limited Flexibility
+3. Not suitable for complex workflows
+4. Not version controlled
+5. Low Reusability
+6. Simple but not scalable
+Pipeline Job:
+1. Code based configuration
+2. High Flexibility
+3. SUpports complex workflows
+4. Stored in Git (version controlled)
+5. High Usability
+6. Modern and used in real-world CI/CD
+
+
+Benifits of Jenkinsfile
+1. Entire workflow is witten in code - pipeline as code
+2. Stored in Github along with the project.
+3. Same pipeline can run anywhere consistently.
+4. Changes can be tracked and updated easily
+5. Can define multiple stages like build, test, deploy.
+
