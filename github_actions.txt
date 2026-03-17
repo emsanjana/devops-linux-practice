@@ -1,0 +1,38 @@
+What is Github Actions ?
+Github actions is a cloud-based CI/CD tool provided by GitHub that allows you to automate workflows directly inside your repository.
+
+GitHub Actions is used to : 
+- Automatically trigger workflows on code push
+- Install dependencies
+- Build the Docker image
+- Verifies that the application builds successfully.
+
+Difference between Jenkins and GitHub Actions: 
+Jenkins :
+- Requires installation and setup
+- Needs manual maintenance
+- Jenkinsfile configuration
+- Self Hosted
+- Works with many tools
+- Manual scaling.
+- Powerful, flexible but requires setup
+GitHub Actions : 
+- Built-in setup 
+- Managed by Github
+- YAML workflow configurations
+- Cloud-hosted 
+- Best with GitHub Ecosystem
+- Autoscaling
+- Easy, integrated and faster to start
+
+
+Advantages of Cloud-Native CI/CD :
+- No need to install or manage servers
+- Ready to use instantly
+- Directly integrated with GitHUb repositories
+- Works seamlessly with commits, pull requests, and branches
+- Can handle multiple builds without manual intervention.
+- Cost effective
+- Immediate feedback on code change
+- Helps catch issues early
+- No need to update or manage infrastructure
