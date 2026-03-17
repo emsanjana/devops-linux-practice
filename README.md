@@ -85,13 +85,24 @@ This repository contains DevOps practice work.
 - Documented it.
 
 ## Week 5
+
 ### Assignment 1
+
 - Installed and configured Jenkins locally/VM
 - Created a Pipeline to automate GitHub code pull, Docker build, and validation
 - Converted the pipeline into a Jenkinsfile and stored it in GitHub
 - Configured automatic triggers for code changes
 - Documented Jenkins usage, job types, and Jenkinsfile benefits
 - Updated and pushed the repository with the Jenkinsfile and documentation
+
+### Assignment 2
+
+- Created and configured a GitHub Actions workflow to trigger on code push
+- Automated dependency installation, Docker image build, and application validation
+- Stored the workflow in the .github/workflows/ directory
+- Verified successful execution of the CI/CD pipeline on GitHub
+- Documented GitHub Actions, its differences from Jenkins, and benefits of cloud-native CI/CD
+
 
 ## Tools Used
 
